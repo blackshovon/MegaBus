@@ -70,10 +70,10 @@
                             <input class="inp-style inp-width" id="firstClsInput" type="text" name="" value="0">
                         </div>
                         <div class="plus-minus-btn">
-                            <button onclick="inputhandler('firstCls' ,true)">
+                            <button class="input-btn" onclick="inputhandler('firstCls' ,true)">
                                 <i class="fas fa-plus"></i>
                             </button>
-                            <button onclick="inputhandler('firstCls' ,false)">
+                            <button class="input-btn" onclick="inputhandler('firstCls' ,false)">
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
@@ -84,10 +84,10 @@
                             <input class="inp-style inp-width" id="economyInput" type="text" name="" value="0">
                         </div>
                         <div class="plus-minus-btn">
-                            <button onclick="inputhandler('economy' , true)">
+                            <button class="input-btn" onclick="inputhandler('economy' , true)">
                                 <i class="fas fa-plus"></i>
                             </button>
-                            <button onclick="inputhandler('economy' , false)">
+                            <button class="input-btn" onclick="inputhandler('economy' , false)">
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
@@ -155,7 +155,7 @@
             const economyPrice = parseInt(document.getElementById("economyInput").value) * 100;
             const subtotal = firstClsPrice + economyPrice;
             document.getElementById("subTotal").innerText = "$" + subtotal;
-            document.getElementById("vat").innerText = "&" + Math.round(subtotal * .10)
+            document.getElementById("vat").innerText = "$" + Math.round(subtotal * .10)
             const total = subtotal + Math.round(subtotal * .10)
             document.getElementById("total").innerText = "$" + total
         }
