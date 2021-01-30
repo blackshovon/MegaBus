@@ -122,3 +122,11 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+#bookingHiddenContent{
+    display: none;
+    padding: 150px 20px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color:darkgreen;
+}
